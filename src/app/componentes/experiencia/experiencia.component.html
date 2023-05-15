@@ -1,0 +1,63 @@
+<div class="rounded mt-3 p-2 mb-2 container border border-dark bg-warning border">
+    <div class="experience">
+        <div class="card-titles">
+            <h3 class="text-dark fw-semibold ">Experiencia Laboral</h3>
+        </div>
+            <div class="btn-edit">
+            <!-- boton editar -->
+            </div>
+                <div>
+                    <ul class="rounded border border-dark">
+                        <li *ngFor="let experiencia of experienciaList">
+                            <div class="d-flex container mt-4">
+                                <a href="#">
+                                    <div>
+                                        <img class="logo-image-exp" [src]="experiencia.img" alt="">
+                                    </div>
+                                </a>
+                                <div class="d-flex justify-content-start align-items-center ps-3 mt-2" style="width: 3000px;">
+                                    <div class="text-dark">
+                                        <h3 class="fw-bold text-decoration-underline ">{{experiencia.titulo}}</h3>
+                                        <p class="d-flex fw-medium">{{experiencia.descripcion}}</p>
+                                        <p style="margin-top: -7px;"><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>     
+    </div>
+</div>
+
+<div class="rounded mt-0 mb-3 container bg-warning border border-dark">
+    <div class="education">
+        <div class="card-titles">
+            <h3 class="text-dark fw-semibold mt-3">Educación / Instituciones</h3>
+        </div>
+        <div class="btn-edit">
+            <!-- boton editar -->
+        </div>
+        <div>
+            <ul class="rounded border border-dark">
+                <li *ngFor="let educacion of educacionList" >
+                    <div class="d-flex container mt-4">
+                        <a href="#">
+                            <div>
+                                <img class="logo-image-edu" [src]="educacion.img" alt="">
+                            </div>
+                        </a>
+                        <div class="d-flex justify-content-start align-items-center ps-3 mt-2">
+                                    <div class="text-dark container">
+                                        <h3 class="fw-bold text-decoration-underline">{{educacion.titulo}}</h3>
+                                        <p class="fw-medium">{{educacion.descripcion}}</p>
+                                        <p style="margin-top: -7px;"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>     
+            </div>
+</div>

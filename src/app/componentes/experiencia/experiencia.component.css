@@ -1,0 +1,19 @@
+.item-list{
+    height: 160px;
+}
+
+.logo-image-exp{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-image-edu{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

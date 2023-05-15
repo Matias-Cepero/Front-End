@@ -1,0 +1,7 @@
+.hello:hover{
+    color: rgba(236, 227, 227, 0.76) !important;
+}
+
+.subrayado:hover{
+    text-decoration: underline;
+}

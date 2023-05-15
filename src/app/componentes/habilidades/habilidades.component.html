@@ -1,0 +1,57 @@
+<div class="d-flex mt-3 p-3 mb-2 container bg-white border border-dark rounded">
+
+    <div class="border border-dark me-1 rounded" style="width: 50%;">
+        <div class="mt-0">
+            <h5 class="d-flex justify-content-center align-items-center text-decoration-underline bg-dark text-white" style="height: 60px;">Tecnologías:</h5>
+        </div>
+        <div class="d-flex">
+            <ul class="pb-2 pt-2">
+                <li *ngFor="let tecnologia of tecnologias">
+                    <div class="d-flex container mt-0">
+                        <a href="#">
+                            <div style="margin-left: -20px;">
+                                <img [src]="tecnologia.img" class="logo-image-tecnologias" alt="">
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                                    <div class="text-dark">
+                                        <h3 class="fw-bold text-decoration-underline ms-1">{{tecnologia.name}}</h3>
+                                        <p class="mt-2 ms-2">Nivel: <b class="text-danger">{{tecnologia.level}}</b></p>
+                                        <hr class="ms-2 border border-dark">
+                                    </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="border border-dark rounded" style="width: 50%;">
+        <div class="mt-0">
+            <h5 class="d-flex justify-content-center align-items-center text-decoration-underline bg-dark text-white" style="height: 60px;">Habilidades:</h5>
+        </div>
+        <div class="d-flex pb-2">
+            <ul class="pb-2 pt-2">
+                <li *ngFor="let habilidades of habilidades">
+                    <div class="d-flex mt-3">
+                        <a href="#">
+                            <div style="margin-left: -8px;">
+                                <img [src]="habilidades.img" class="logo-image-tecnologias" alt="">
+                            </div>
+                        </a>
+                        <div class="ps-3 mt-2">
+                                    <div class="text-dark">
+                                        <h3 class="mt-4 fs-6 fw-bold text-decoration-underline">{{habilidades.name}}</h3>
+                                        <hr class="border border-dark">
+                                    </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+

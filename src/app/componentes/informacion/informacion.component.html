@@ -1,0 +1,18 @@
+<div class="container bg-warning mt-5 border border-dark rounded-top" style="height: 300px;">
+    <!-- img personal -->
+    <div class="position-absolute d-flex bg-warning rounded-pill imgperfil border border-dark">
+        <img class="position-absolute bg-warning rounded-pill imgperfil border border-dark" [src]="miPorfolio.image" style="width: 245px; height: 280px; margin-top: 170px; margin-left: -2px;">
+    </div>
+    <!-- fondo -->
+    <div>
+        <img class="rounded" [src]="miPorfolio.backImage" style="height: 300px; width: 100%;" alt="">
+    </div>
+</div>
+
+<!-- info basica -->
+<div class=" container bg-warning rounded-bottom border border-dark" >
+    <div class="marginpersonal">
+        <h3 class="d-flex mt-3 mb-4 text-dark text-decoration-underline fw-bold" style="width: 200px; margin-left: 20px;">Acerca de:</h3>
+        <p class="pb-5 ms-2" style="font-size: 15px;margin-top: -9px;">{{miPorfolio.acercade}}</p>
+    </div>
+</div>

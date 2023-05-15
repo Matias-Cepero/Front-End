@@ -1,0 +1,28 @@
+<div class="rounded mb-3 container bg-warning border border-dark pb-3">
+    <div class="education">
+        <div class="card-titles">
+            <h3 class="text-dark fw-semibold mt-3">Proyectos</h3>
+        </div>
+        <div class="container rounded border border-dark">
+            <ul class="container">
+                <li *ngFor="let proyectos of proyectosList">
+                    <div class="d-flex container mt-4">
+                        <a href="#">
+                            <div>
+                                <img class="logo-image-proyectos" [src]="proyectos.img" style="margin-left: -5px; margin-top: 10px;">
+                            </div>
+                        </a>
+                        <div class="d-flex container align-items-center mt-2">
+                                    <div class="container text-dark">
+                                        <h3 class="fw-bold text-decoration-underline">{{proyectos.name}}</h3>
+                                        <p class="fw-medium mt-2">{{proyectos.descripcion}}</p>
+                                        <p class="fw-bold">Link:<a class="container" style="margin-left: -8px;" href="{{proyectos.link}}" target="_blank">{{proyectos.link}}</a></p> 
+                                        <hr>
+                                    </div>
+                        </div>
+                    </div>
+                 </li>
+             </ul>
+        </div>     
+     </div>
+</div>
